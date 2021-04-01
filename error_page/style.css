@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+	height: auto;
+  width: 100%;
+}
+
+.container {
+  overflow: hidden;
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  padding-top: 80px;
+  height: auto;
+}
+
+h3{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-family: Inconsolata;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.imagebox{
+  width:50%;
+  height: auto;
+  display: flex;
+  left: 77px;
+  justify-content: center;
+}
+
+.imagebox img{
+  width: 450px;
+  height: auto;
+}
+
+.textbox{
+  width: 40%;
+  height: auto;
+}
+
+.textbox h1{
+	max-width: 580px;
+  font-family: Space Mono;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 80px;
+
+  color: #333;
+}
+
+.textbox p{
+  max-width: 380px;
+
+  font-family: Space Mono;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #4F4F4F;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+
+button{
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #333;
+  border-radius: 35px;
+  margin-top: 20px;
+	cursor: pointer;
+
+  background: #333;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover{
+  background: #000;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #BDBDBD;
+}
+
+@media only screen and (max-width: 900px){
+  .container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  h3{
+    font-size:16px;
+
+  }
+
+  .imagebox{
+    width: 90%;
+    margin: auto;
+  }
+
+  .imagebox img{
+    width: 60%;
+    height: auto;
+  }
+
+  .textbox{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .textbox h1{
+    font-size: 16vw;
+  }
+
+  .textbox p{
+    width: 90%;
+    margin: 30px auto;
+    font-size: 4vw;
+  }
+
+  .footer{
+    width: 90%;
+    margin: 20px auto;
+  }
+}
