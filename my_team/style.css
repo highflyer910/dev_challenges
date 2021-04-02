@@ -1,0 +1,197 @@
+/* =====================
+TABLE OF CONTENT:
+0. HTML, BODY, CONTAINER
+1. HEADER
+2. CARD COMPONENTS
+3. FOOTER
+============*/
+
+
+/* =====
+0. HTML, BODY, CONTAINER
+=======*/
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+  }
+  
+  header {
+    width: 100%;
+    padding-left: 3.2%;
+    padding-right: 3.2%;
+    margin-top: 70px;
+    margin-bottom: 45px;
+  }
+  
+  main {
+    margin-left: 5.1%;
+    margin-right: 5.1%;
+  }
+  
+  .container {
+    padding-bottom: 150px;
+  }
+  
+  @media screen and (min-width: 770px) {
+    header {
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-top: 80px;
+      margin-bottom: 100px;
+    }
+    main {
+      margin-left: 10.1%;
+      margin-right: 10.1%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) { 
+    header {
+      padding-left: 16.6%;
+      padding-right: 16.6%;
+      margin-top: 100px;
+      margin-bottom: 80px;
+    }
+    main {
+      margin-left: 17.1%;
+      margin-right: 17.1%;
+    }
+  }
+  
+  
+  /* =====
+  1. HEADER
+  =======*/
+  
+  .title {
+    margin-bottom: 38px;
+    font-size: 2.25rem; /* 36 / 16 */
+    font-family: 'PT Serif', serif;
+  }
+  
+  .sub_title {
+    margin-bottom: 10px;
+    font-size: 1.125rem; /* 18 / 16 */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem; /* 14 / 16 */
+  }
+  
+  @media screen and (min-width: 70px) {
+    header {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    .description {
+      width: 40%;
+    }
+    .text {
+      font-size: 1.125rem; /* 18 / 16 */
+    }
+  }
+  
+  
+  /* =====
+  2. CARD COMPONENTS
+  =======*/
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card_item {
+    width: 90%;
+    position: relative
+  }
+  
+  .card_img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .card_name {
+    font-size: 0.875rem; /* 14 / 16 */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.31rem; /* 21 / 16 */
+  }
+  
+  .card_job {
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    line-height: 13.25px;
+    font-size: 0.625rem; /* 10 / 16 */
+    writing-mode: vertical-rl;
+    position: absolute;
+    right: -10%;
+    top: 0%;
+  }
+  
+  @media screen and (min-width: 374px) { 
+    .card_item {
+    width: 40%;
+  }
+  .card_item:nth-child(even) {
+    margin-top: 50px;
+  }
+  }
+  
+  @media screen and (min-width: 770px) {
+    .card_item {
+    width: 40%;
+    }
+    .card_name {
+      font-size: 1.125rem; /* 18 / 16 */
+      line-height: 1.69; /* 27 / 16 */
+    }
+    .card_job {
+      font-size: 0.75rem; /* 12 / 16 */
+      line-height: 1rem;
+    }
+    }
+  
+  
+  @media screen and (min-width: 1200px) {
+    .card_item {
+    width: 28%;
+    }
+  }
+  
+  /* =====
+  3. FOOTER
+  =======*/
+  
+  .footer {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-style: 'Montserrat';
+    font-weight: 500;
+    color: #A9A9A9;
+    padding-bottom: 20px;
+  }
+  
+  .footer a {
+    color: #A9A9A9;
+    font-weight: bold;
+  }
