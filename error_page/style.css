@@ -1,3 +1,17 @@
+/* =====================
+TABLE OF CONTENT:
+0. BODY, CONTAINER
+1. HEADER
+2. CONTAINER COMPONENTS
+3. FOOTER
+============*/
+
+
+/* =====
+0. BODY, CONTAINER
+=======*/
+
+
 * {
   margin: 0;
 	padding: 0;
@@ -19,6 +33,10 @@ body {
   height: auto;
 }
 
+/* =====
+  1. HEADER
+  =======*/
+
 h3{
   position: absolute;
   top: 20px;
@@ -31,6 +49,11 @@ h3{
   text-transform: uppercase;
   color: #333333;
 }
+
+
+/* =====
+  2. CONTAINER COMPONENTS
+  =======*/
 
 .imagebox{
   width:50%;
@@ -96,20 +119,6 @@ button:hover{
 }
 
 
-.footer{
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-
-  color: #BDBDBD;
-}
-
 @media only screen and (max-width: 900px){
   .container{
     display: block;
@@ -155,3 +164,23 @@ button:hover{
     margin: 20px auto;
   }
 }
+
+
+/* =====
+  3. FOOTER
+  =======*/
+
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  
+    color: #BDBDBD;
+  }

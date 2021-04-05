@@ -12,6 +12,10 @@
       Demo
     </a>
     <span> | </span>
+    <a href="https://github.com/highflyer910/dev_challenges/tree/master/error_page">
+      Solution
+    </a>
+    <span> | </span>
     <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">
       Challenge
     </a>
@@ -26,7 +30,6 @@
 - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
