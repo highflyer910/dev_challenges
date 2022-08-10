@@ -1,17 +1,512 @@
-html, body {
-  margin: 0;
-  height: 100%;
-  min-width: 374px;
-  font-size: 18px;
-  color: #333333;
-}
-body {
-  display: flex;
-  flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+  
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  html{
+      padding: 1rem 1rem;
+      line-height: 1.5;
+      font-size: .75rem;
+  }
+  
+  body{
+      max-width: 70rem;
+      margin: 1rem auto;
+      overflow-x: hidden;
+  }
+  
+  img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+  header{
+      margin-bottom: 1.5rem;
+  }
+  header h1{
+      font-family: 'Playfair Display';
+      font-weight: bold;
+      font-size: 2rem;
+      padding: .6rem;
+      color: #000000;
+      margin-bottom: 1.5rem;
+  }
+  header .text {
+      display: flex;
+      align-items: flex-start;
+  }
+  
+  header .text p{
+      font-family: Montserrat;
+      font-style: italic;
+      font-weight: 500;
+      color: #4F4F4F;
+      padding: 0 .3rem;
+      
+  }
+  header .text img{
+      width: 1rem;
+      padding: .5rem 0;
+  }
+  .main-image {
+      padding: 1.5rem 0;
+  }
+  .main-image img{
+      height: 25rem;
+      border-radius: 1rem;
+  }
+  
+  .sidebar{
+      margin: 1.5rem 0;
+  }
+  .sidebar .header{
+      display: flex;
+      width: 30%;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+   
+  }
+  
+  
+  .sidebar .header .text .yellow{
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: .8rem;
+      color: #F2994A;
+  }
+  
+  
+  .sidebar .body{
+      display: flex;
+      justify-content: space-between;
+  }
+  .sidebar .body .item{
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 30%;
+      flex: none;
+  }
+  .sidebar .body .item .text,
+  .sidebar .header .text{
+      width: 70%;
+  }
+  .sidebar .body .item .img,
+  .sidebar .header .img{
+      width: 20%;
+      padding:  0 .3rem 0 0;
+  }
+  .sidebar .body .text div:first-child, 
+  .sidebar .text div:first-child{
+  
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: .8rem;
+      text-transform: uppercase;
+      color: #BDBDBD;
+      padding: .1rem 0;
+  }
+  .sidebar .body .text div{
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: .9rem;
+      color: #333333;
+  }
+  
+  .ingredients h2,
+  .ingredients h1{
+      font-family: Playfair Display;
+      color: #333333;
+      padding: 1rem 0;
+  }
+  .ingredients h1{
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+  .ingredients h2{
+      font-weight: normal;
+      font-style: italic;
+      font-size: 1rem;
+  }
+  .ingredient > div{
+      font-family: Montserrat;
+      color: #333333;
+      display: flex;
+      align-items: flex-start;
+      margin: 1rem 0;
+      
+  }
+  .ingredient input{
+      display: block;
+      width: 31px;
+      height: 31px;   
+      flex: none;
+      margin-right: 1rem;
+  }
+  .ingredient label{
+      display: block;
+  }
+  
+  .instructions{
+      padding: 1.5rem 0;
+   
+  }
+  .instructions h1{
+      font-family: Playfair Display;
+      font-weight: bold;
+      font-size: 2rem;
+      color: #333333;
+      padding: 1rem 0;
+  }
+  .instructions > div{
+      display: flex;
+      padding: 1rem 0;
+  }
+  
+  .instructions .number{
+      font-weight: bold;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      flex: none;
+      margin-right: 1rem;
+      color: #FFFFFF;
+      background: #F2994A;
+      border-radius: 6px;
+  
+      
+  }
+  
+  .instructions > div div:last-child{
+      font-family: Montserrat;
+      font-weight: normal;
+  }
+  
+  .src{
+      padding: 1rem 0;
+      font-family: Montserrat;
+      font-style: italic;
+      font-size: .8rem;
+      word-wrap: break-word;
+      color: #BDBDBD;
+  }
+  
+  footer{
+      text-align: center;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: .9rem;
+      color: #828282;
+      padding: 2rem 0;
+  
+  }
+  
+  footer a{
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+  }
+  
+  @media all and (min-width : 1024px){
+      html{
+         
+          font-size: 1rem;
+      }
+      .main{
+        
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+       }
+  
+      .sidebar{
+          background: #FFFFFF;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+          width: 16.5rem;
+          flex: none;
+          height: 23rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+  
+       }
+  
+      .sidebar .body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+      .sidebar .body .item,
+      .sidebar .header{
+          width: 9rem;
+          margin: 0 auto;
+          flex: none;
+          padding: 1rem 0;
+          align-items: center;
+    
+      }
+  
+      .ingredients, .instructions{
+          width: 80%;
+      }
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/*header area*/
+
+.header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.header h1{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--fs-h1);
+    line-height: 64px;
+}
+
+.header-content{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.header .header-content .header-text{
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    font-size: var(--fs-header-content);
+    line-height: 17px;
+    color: #4F4F4F;
+}
+
+/*image area*/
+
+.image img{
+    width: min(100%, 969px);
+    height: min(100%, 470px);
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/*main cheeseka recipe content area*/
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 40px;
+}
+
+.content .desert h2{
+    font-family: Playfair Display;
+    font-size: var(--fs--h2-h3);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.desert-recipe{
+    line-height: 3vh;
+}
+
+.content .desert .desert-recipe h3{
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.content .desert .desert-recipe label{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-text);
+    line-height: 25px;
+    color: #333333;
+}
+
+.instructions h3{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--fs--h2-h3);
+    line-height: 32px;
+    color: #333333;
+}
+
+.instructions ol{
+    list-style: none;
+}
+
+.instructions ol li{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-text);
+    line-height: 20px;
+    color: #000000;
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+.instructions ol li:before{
+    margin-right: 10px;
+    content: counter(item);
+    background: #F2994A;
+    border-radius: 6px;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+}
+
+.content .desert .sources{
+    margin-top: 45px;
+    font-family: Montserrat;
+    font-size: var(--fs-text);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+/*cook timer instruction div area*/
+
+.cook-timer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cook-timer-menu{
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.cook-timer-elements{
+    display: flex;
+    align-items: center;
+}
+
+.timing-content{   
+    margin-left: 25px;
+}
+
+.timing-place{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: min(10px, 10px);
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.timing{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(11px, 14px);
+    line-height: 17px;
+    color: #333333;
+}
+
+/*footer area*/
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(12px, 14px);
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 767px){
+    .container{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin: 0 15px;
+    }
+
+    .cook-timer{
+        align-items: stretch;
+    }
+
+    .cook-timer-menu{
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .timing-content{
+        margin-left: 10px;
+    }
+
+    .timing-content p{
+        line-height: 6px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cook-timer-menu{
+        display: grid;
+        grid-template-rows: 4fr;
+    }
+
+    .yields{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .time{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .timing-content p{
+        line-height: 12px;
+    }
 }
