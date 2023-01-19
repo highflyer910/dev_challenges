@@ -4,62 +4,147 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
+      content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
     <title>Eddie's Page</title>
 
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li class="logo">Edie</li>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Our Works</li>
-          <li>Clients</li>
-          <li>Contact</li>
+        <div class="logo">
+          <h2>Edie</h2>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main> 
-      <div class="container">
+      <section class="container">
         <div class="hero">
-          <a href="#">Unhappy with your website?</a>
+          <span>Unhappy with your website?</span>
           <h1>We create beautiful <br> and fast websites</h1>
-          <img src="heroImage.jpg" alt="hero image">
-          <h2>Story, emotion<br> and purpose</h2>
-          <p>We help transform your ideas into real world applications that will 
+          <img class="hero-img" src="heroImage.jpg" alt="hero image">
+          <h1>Story, emotion<br> and purpose</h1>
+          <p class="hero-text">We help transform your ideas into real world applications that will 
             outperform your toughest competition and help you achieve your strategic 
             goals in short period of time.</p>
-            <p>Want us to contact you?</p>
-            <input type="email" placeholder="email">
-            <button>Join</button>
+          <p class="hero-mail">Want us to contact you?</p>
+          <div class="hero-input">
+            <input type="email" placeholder="email" aria-label="Email address" aria-describedby="basic-addon2">
+            
+            <button class="hero-input-button">Join</button>
+          </div>
         </div>
-      </div>
-      <div class="services">
+      </section>
+      <section class="services">
         <h3>We offer high demand services</h3>
         <div class="service">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <h4>UI/UX Design</h4>
+            <p>Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit. 
+              Duis a metus ac nulla consequat 
+              aliquet id quis turpis.
+            </p>
+            <button>Get started</button>
+          </div>
+          <div>
+            <h4>Front End</h4>
+            <p>Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit. 
+              Duis a metus ac nulla consequat 
+              aliquet id quis turpis.
+            </p>
+            <button>Get started</button>
+          </div>
+          <div>
+            <h4>Back End</h4>
+            <p>Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit. 
+              Duis a metus ac nulla consequat 
+              aliquet id quis turpis.
+            </p>
+            <button>Get started</button>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="projects">
+        <h3>Good design means <br>
+          good business</h3>
+        <div>
+            <img src="smarthome.jpg" alt="smart home">
+            <span>Full stack application</span>
+            <p>Smart home dashboard</p>
+        </div>
+        <div>
+          <img src="onboard.png" alt="onboard app">
+          <span>UI/UX design</span>
+          <p>Onboard application</p>
+        </div>
+        <div>
+          <img src="booking.png" alt="booking app">
+          <span>Mobile application</span>
+          <p>Booking system</p>
+        </div>
+        <div>
+          <img src="juice-product.png" alt="juice-product app">
+          <span>Front End application</span>
+          <p>Juice product homepage</p>
+        </div>
+        <a href="#">see more</a>
+      </section>
+      <section class="team">
+        <div class="team-info">
+          <p>meet the team</p>
+          <h3>We are chilled <br>
+          and a laidback <br> team</h3>
+        </div>
+        <div class="team-gallery">
+          <img src="person1.png" alt="">
+          <img src="person2.png" alt="">
+          <img src="person3.png" alt="">
+        </div>
+      </section>
+      <section class="quote">
+        <q>Fast and outstanding resutls. 
+          Edie understands their customer’s needs. 
+          They have a young and talented team.</q>
+          <div class="quote-author">
+            <img src="person4.png" alt="">
+            <p>Carlos Tran</p>
+            <span>The decorate Gatsby</span>
+          </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-menu">
+        <a href="#">Home</a>
+        <a href="">Services</a>
+        <a href="">Our Works</a>
+        <a href="">Clients</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h2>Edie</h2>
+        <a href=""><i class="fab fa-instagram"></i> </a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer-contact">
+        <label for="contact">Want us to contact you?</label>
+        <input type="text" placeholder="Email">
+        <button>Join</button>
+      </div>
+    </footer>
   </body>
 </html>
