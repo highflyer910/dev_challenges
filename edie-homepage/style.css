@@ -60,6 +60,8 @@ nav .logo{
     display: block;
     width: 98%;
     margin: 20px auto;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
 }
 
 .hero-text{
@@ -106,4 +108,74 @@ nav .logo{
     cursor: pointer;
     font-size: 18px;
     margin-left: -10px;
+}
+
+.services h3{
+    font-size: 36px;
+    color: #333;
+    padding-top: 200px;
+    padding-left: 165px;
+}
+
+.services .service{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 42px auto;
+    gap: 10px;
+}
+
+.service-info{
+    width: 341px;
+    height: 422px;
+    color: #4F4F4F;
+    border: 1px solid #4F4F4F;
+    padding: 0 34px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.service-info h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.service-info button{
+    width: 116px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color:  #E0E0E0;
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.service-info .fa{
+    width: 67px;
+    height: 67px;
+    border-radius: 16px;
+    margin-top: 46px;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.service-info .fa-pen{
+    background-color: #2D9CDB;
+    padding: 20.5px 20px;
+}
+
+.service-info .fa-code{
+    background-color: #27AE60;
+    padding: 22px 18px;
+}
+
+.service-info .fa-list{
+    background-color: #EB5757;
+    padding: 22px 19px;
 }
